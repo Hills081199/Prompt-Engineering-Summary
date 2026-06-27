@@ -9,6 +9,8 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=OPENAI_API_KEY)
 async_client = AsyncOpenAI(api_key=OPENAI_API_KEY)
 DEFAULT_MODEL = "gpt-4o-mini"   # Rẻ nhất, phù hợp để học
+SMART_MODEL = "gpt-4o"   # Thông minh hơn, phù hợp cho complex tasks
+
 def chat(
     user_message: str,
     system_message: str = "You are a helpful AI assistant.",
